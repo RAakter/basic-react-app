@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 const name = "Rezowana Akter";
 const date = new Date();
 const dateName = date.getDate();
@@ -11,16 +12,16 @@ const monthName = date.getMonth() + 1;
 const yearName = date.getFullYear();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const headingStyle = {
-  backgroundColor: "purple",
-  color: "white",
-  textAlign: "center",
-  padding: "15px"
-}
+// const headingStyle = {
+//   backgroundColor: "purple",
+//   color: "white",
+//   textAlign: "center",
+//   padding: "15px"
+// }
 
 root.render(
   <div>
-    <h1 style={headingStyle}>Welcome to my React App</h1>
+    <h1 className="headingStyle largeText">Welcome to my React App</h1>
     <p>{name}</p>
     <p>Started on: {dateName + "/0" +monthName+ "/" + yearName}</p>
     <p>{}</p>
