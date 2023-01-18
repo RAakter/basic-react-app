@@ -21,11 +21,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <div>
-    <h1 className="headingStyle largeText">Welcome to my React App</h1>
-    <p>{name}</p>
-    <p>Started on: {dateName + "/0" +monthName+ "/" + yearName}</p>
-    <p>{}</p>
-    <p>{}</p>
+    <h1 className="headingStyle largeText">Todo App</h1>
+    <div className='card'>
+      <p className='cardTitle'>{name}</p>
+      <p className='cardDes'>Started on: {dateName + "/0" +monthName+ "/" + yearName}</p>
+      <p className='cardFooter'>{name}</p>
+    </div>
   </div>
   // <React.StrictMode>
   //   <App />
