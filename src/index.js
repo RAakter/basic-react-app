@@ -10,9 +10,10 @@ const dateName = date.getDate();
 const monthName = date.getMonth() + 1;
 const yearName = date.getFullYear();
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <div>
-    <h1>Welcome to my React App</h1>
+    <h1 style={{color: "blue"}}>Welcome to my React App</h1>
     <p>{name}</p>
     <p>Started on: {dateName + "/0" +monthName+ "/" + yearName}</p>
     <p>{}</p>
