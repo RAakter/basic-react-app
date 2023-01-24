@@ -3,14 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Card from './Components/Card';
 
-
-const name = "Rezowana Akter";
-const date = new Date();
-const dateName = date.getDate();
-const monthName = date.getMonth() + 1;
-const yearName = date.getFullYear();
-const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // const headingStyle = {
 //   backgroundColor: "purple",
@@ -18,16 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   textAlign: "center",
 //   padding: "15px"
 // }
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
-    <h1 className="headingStyle largeText">Todo App</h1>
-    <div className='card'>
-      <p className='cardTitle'>{name}</p>
-      <p className='cardDes'>Started on: {dateName + "/0" +monthName+ "/" + yearName}</p>
-      <p className='cardFooter'>{name}</p>
-    </div>
-  </div>
+  <App/>
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
